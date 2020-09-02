@@ -10,6 +10,8 @@ const app = express();
 //Base de datos
 dbConnection();
 
+app.use(express.static('public'));
+
 //Cors
 app.use( cors() );
 
